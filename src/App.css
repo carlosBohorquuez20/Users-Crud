@@ -171,17 +171,24 @@ li:hover {
     width: 98%;
     height: auto;
     justify-content: flex-start;
-
   }
 }
 
 h2 {
   font-size: 24px;
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 18px;
+  }
 }
 
 .text-background {
   width: 100%;
   font-size: 20px;
+  font-weight: 400;
   letter-spacing: 2px;
   display: flex;
   justify-content: center;
@@ -190,18 +197,24 @@ h2 {
   padding: 20px;
 }
 
+@media (max-width: 480px) {
+  .text-background {
+    font-size: 15px;
+    font-weight: 400;
+
+  }
+}
 
 .bot-line {
   width: 100%;
   border-bottom: 1px solid #FFE8D6;
 }
 
-h2 {
-  font-weight: 500;
-}
-
-p {
-  font-weight: 400;
+@media (max-width: 480px) {
+  p {
+    
+    font-weight: 400;
+  }
 }
 
 .buttons {
@@ -268,10 +281,11 @@ form {
   color: #F5EBE0;
 }
 
+
 @media (max-width: 480px) {
   form {
     width: 80%;
-    height: 66%;
+    height: 640px;
   }
 }
 
