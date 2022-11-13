@@ -69,7 +69,7 @@ function App() {
   const modalStatus = (a) => {
     setModal(a)
   }
-  
+
   return (
     <div className="App">
       <div className='top-users'>
@@ -83,9 +83,7 @@ function App() {
       <div className={`${modal ? "modal-active" : "modal-desactive"}`}>
         <UsersForm getUsers={getUsers} userSelect={userSelect} deSelect={deSelect} modalStatus={modalStatus} edit={edit} />
       </div>
-      <div>
-        <UsersList usersList={usersList} selectUser={selectUser} deleteProduct={deleteProduct} modalStatus={modalStatus} setEdit={setEdit} />
-      </div>
+      <UsersList usersList={usersList} selectUser={selectUser} deleteProduct={deleteProduct} modalStatus={modalStatus} setEdit={setEdit} />
       <Footer />
     </div>
   )
